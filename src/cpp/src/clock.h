@@ -13,6 +13,7 @@ class EXPORT Clock
     virtual ~Clock() = default;
 
     virtual int now();
+    virtual void wait(int durationInMilliseconds); // In milliseconds
 };
 
 #endif //CLOCK_H
