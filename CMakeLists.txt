@@ -41,7 +41,7 @@ endif()
 include(lib/cmake-helpers/arduino-cli.cmake)
 
 add_subdirectory("src/cpp")
-add_subdirectory("src/arduino")
+#add_subdirectory("src/arduino")
 add_subdirectory("src/macos")
 add_subdirectory("src/stdio")
 add_subdirectory("src/tests")

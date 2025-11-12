@@ -4,7 +4,7 @@ project(flux-stdio)
 set(CMAKE_CXX_STANDARD 17)
 
 set(FLUX_STDIO_DIR ${CMAKE_SOURCE_DIR}/flux-stdio)
-set(FLUX_LIB_DIR ${CMAKE_SOURCE_DIR}/libraries/flux-cpp)
+set(FLUX_LIB_DIR ${CMAKE_SOURCE_DIR}/src/cpp)
 set(OUTPUT_DIR ${CMAKE_BINARY_DIR}/bin)
 
 add_executable(flux-stdio
