@@ -10,7 +10,11 @@ file(GLOB_RECURSE FLUX_FILES ${FLUX_LIB_SOURCE_DIR}/*.cpp)
 message(STATUS "FLUX source dir: ${FLUX_LIB_SOURCE_DIR}")
 message(STATUS "FLUX_FILES found: ${FLUX_FILES}")
 
-add_library(flux-cpp STATIC ${FLUX_FILES})
+add_library(flux-cpp STATIC ${FLUX_FILES}
+  ../arduino/src/I2CTwoWire.cpp
+  ../arduino/src/I2CTwoWire.h
+  src/I2C.h
+  ../arduino/src/flux-arduino.h)
 
 target_include_directories(flux-cpp PUBLIC
   ${FLUX_LIB_SOURCE_DIR}
