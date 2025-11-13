@@ -15,15 +15,6 @@ class I2C {
   public:
     virtual ~I2C() = default;
 
-    // Initialization
-    virtual void begin() = 0;
-    virtual void begin(uint8_t address) = 0;
-    virtual void begin(int sda, int scl) = 0;
-    virtual void end() = 0;
-
-    // Configuration
-    virtual void setClock(uint32_t frequency) = 0;
-
     // Communication
     virtual void beginTransmission(uint8_t address) = 0;
     virtual uint8_t endTransmission() = 0;
