@@ -8,5 +8,6 @@
 #include "logger.h"
 #include "clock.h"
 #include "keyboard.h"
+#include "I2C.h"
 
 #endif //FLUX_CPP_FLUX_CPP_H
