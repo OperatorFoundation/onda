@@ -1,7 +1,9 @@
 add_library(onda-macos src/onda-macos.h
   src/stdio_logger.cpp
   src/stdio_logger.h
-  src/onda-macos.h)
+  src/onda-macos.h
+  src/macos_clock.cpp
+  src/macos_clock.h)
 
 target_link_libraries(onda-macos PUBLIC onda)
 

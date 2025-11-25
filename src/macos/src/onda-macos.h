@@ -6,5 +6,6 @@
 #define ONDA_ONDA_MACOS_H
 
 #include "stdio_logger.h"
+#include "macos_clock.h"
 
 #endif //ONDA_ONDA_MACOS_H
